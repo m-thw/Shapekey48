@@ -19,6 +19,8 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        polling-interval-ms = <10>; /* 10ms */
+
 
     };
 };
@@ -56,7 +58,6 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&xiao_d 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        polling-interval-ms = <10>; /* 10ms */
 
         automouse-layer = <4>;
         scroll-layers = <5>;
