@@ -1,0 +1,8 @@
+file_format: "1"
+id: shapekey
+name: shapekey
+type: shield
+url: https://github.com/m-thw/Shapekey48
+requires: [seeeduino_xiao_ble]
+features:
+  - keys

@@ -1,0 +1,5 @@
+config SHIELD_SHAPEKEY_R
+    def_bool $(shields_list_contains,shapekey_R)
+
+config SHIELD_SHAPEKEY_L
+    def_bool $(shields_list_contains,shapekey_L)
