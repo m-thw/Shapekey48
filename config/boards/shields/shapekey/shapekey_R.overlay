@@ -19,7 +19,6 @@
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        polling-interval-ms = <10>; /* 10ms */
 
 
     };
