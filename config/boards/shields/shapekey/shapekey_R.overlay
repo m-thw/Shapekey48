@@ -56,15 +56,11 @@
         compatible = "pixart,pmw3610";
         reg = <0>;
         spi-max-frequency = <2000000>;
-        irq-gpios = polling;
+        irq-gpios = <&xiao_d 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
         automouse-layer = <4>;
         scroll-layers = <5>;
     };
 };
-kscan0: kscan {
-    compatible = "zmk,kscan-gpio-matrix";
-    poll-period-ms = <10>;  // ポーリング間隔（ミリ秒）
-    debounce-scan-period-ms = <1>; // キープレス時のスキャン間隔
-};
+
 
