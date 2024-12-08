@@ -2,15 +2,32 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/petejohanson
-    - name: m-thw
-      url-base: https://github.com/m-thw
+    - name: inorichi
+      url-base: https://github.com/inorichi
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-pmw3610-driver
-      remote: m-thw 
-      revision: main 
+      remote: inorichi
+      revision: main
   self:
     path: config
+
+  # manifest:
+  # remotes:
+  #   - name: zmkfirmware
+  #     url-base: https://github.com/petejohanson
+  #   - name: m-thw
+  #     url-base: https://github.com/m-thw
+  # projects:
+  #   - name: zmk
+  #     remote: zmkfirmware
+  #     revision: feat/pointers-move-scroll
+  #     import: app/west.yml
+  #   - name: zmk-pmw3610-driver
+  #     remote: m-thw 
+  #     revision: main 
+  # self:
+  #   path: config
